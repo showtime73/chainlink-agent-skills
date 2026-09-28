@@ -15,7 +15,7 @@ Use only for facts that change. Never hardcode route/token/network/lane counts, 
 
 ### URLs
 
-CCIP Docs: `https://docs.chain.link/ccip.md`; EVM tutorials `https://docs.chain.link/ccip/tutorials/evm.md`; SVM `https://docs.chain.link/ccip/tutorials/svm.md`; Aptos `https://docs.chain.link/ccip/tutorials/aptos.md`.
+CCIP Docs: `https://docs.chain.link/ccip.md`; EVM tutorials `https://docs.chain.link/ccip/evm/tutorials.md`; SVM `https://docs.chain.link/ccip/v1/svm/tutorials.md`; Aptos `https://docs.chain.link/ccip/v1/aptos/tutorials.md`.
 
 Fetch `https://docs.chain.link/ccip/tools/llms.txt` first for CLI flags, REST parameters/errors, and SDK exports/signatures; use `https://docs.chain.link/ccip/llms-full.txt` for concepts/lifecycle/architecture. Landing pages: `https://docs.chain.link/ccip/tools`, `/tools/api/`, `/tools/sdk/`, `/tools/cli/`, `/tools/chains`.
 

@@ -90,11 +90,11 @@ All families support token transfer, arbitrary data messaging, and programmable 
 
 ## Solana CCT and tutorials
 
-Solana CCT governance choices: direct mint-authority transfer (development/testing), SPL Token multisig (educational), or production multisig dual-layer governance. Tutorial: `https://docs.chain.link/ccip/tutorials/svm/cross-chain-tokens.md`.
+Solana CCT governance choices: direct mint-authority transfer (development/testing), SPL Token multisig (educational), or production multisig dual-layer governance. Tutorial: `https://docs.chain.link/ccip/v1/svm/tutorials/cross-chain-tokens.md`.
 
-Solana: getting started `https://docs.chain.link/ccip/getting-started/svm.md`; index `https://docs.chain.link/ccip/tutorials/svm.md`; source `https://docs.chain.link/ccip/tutorials/svm/source.md`; destination `https://docs.chain.link/ccip/tutorials/svm/destination.md`; source/destination tokens under those paths at `token-transfers.md`; destination arbitrary data at `arbitrary-messaging.md`; receivers `https://docs.chain.link/ccip/tutorials/svm/receivers.md`.
+Solana: getting started `https://docs.chain.link/ccip/v1/svm/getting-started.md`; index `https://docs.chain.link/ccip/v1/svm/tutorials.md`; source `https://docs.chain.link/ccip/v1/svm/tutorials/source.md`; destination `https://docs.chain.link/ccip/v1/svm/tutorials/destination.md`; source/destination tokens under those paths at `token-transfers.md`; destination arbitrary data at `arbitrary-messaging.md`; receivers `https://docs.chain.link/ccip/v1/svm/tutorials/receivers.md`.
 
-Aptos: getting started `https://docs.chain.link/ccip/getting-started/aptos.md`; index `https://docs.chain.link/ccip/tutorials/aptos.md`; source `https://docs.chain.link/ccip/tutorials/aptos/source.md`; destination `https://docs.chain.link/ccip/tutorials/aptos/destination.md`; source/destination token guides at each path's `token-transfers.md`.
+Aptos: getting started `https://docs.chain.link/ccip/v1/aptos/getting-started.md`; index `https://docs.chain.link/ccip/v1/aptos/tutorials.md`; source `https://docs.chain.link/ccip/v1/aptos/tutorials/source.md`; destination `https://docs.chain.link/ccip/v1/aptos/tutorials/destination.md`; source/destination token guides at each path's `token-transfers.md`.
 
 SDK examples: `https://github.com/smartcontractkit/ccip-sdk-examples` (`01-getting-started` scripts for EVM/Solana/Aptos; `03-multichain-bridge-dapp` browser app).
 
