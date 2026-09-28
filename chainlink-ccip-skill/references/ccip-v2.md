@@ -33,7 +33,7 @@ ExtraArgsCodec._encodeGenericExtraArgsV3(args);
 
 - `0x00000000` `WAIT_FOR_FINALITY_FLAG`: full finality, the default and safest.
 - Low 16 bits `1..65535`: wait that many source blocks. Encode with `FinalityCodec._encodeBlockDepth(n)`.
-- High 16 bits are flags (`WAIT_FOR_SAFE_FLAG`); the docs mark them not activated. Do not request them.
+- High 16 bits are flags. Request `WAIT_FOR_SAFE_FLAG` (`ExtraArgsCodec._getBasicEncodedExtraArgsV3FastConfirmationRule`) only when the user asks and the pool, CCVs, executor, and receiver allow it; other flag bits are reserved.
 - An allowed config `_encodeBlockDepth(k)` admits full finality or any requested depth `>= k`; `0` admits only full finality. Otherwise `FinalityCodec.InvalidRequestedFinality(requested, allowed)`.
 
 ## Fast Transfers (FTF)
@@ -74,7 +74,7 @@ function getCCVsAndFinalityConfig(uint64 sourceChainSelector, bytes calldata sen
 
 ## Docs
 
-- Fast Transfers: `https://docs.chain.link/ccip/concepts/execution-latency/ftf.md`, `https://docs.chain.link/ccip/concepts/execution-latency/ftf-dapps.md`, `https://docs.chain.link/ccip/concepts/execution-latency/fast-transfers-token-issuers.md`
+- Fast Transfers: `https://docs.chain.link/ccip/concepts/execution-latency/ftf.md`, `https://docs.chain.link/ccip/concepts/execution-latency/ftf-dapps.md`, `https://docs.chain.link/ccip/concepts/execution-latency/ftf-token-issuers.md`
 - extraArgs: `https://docs.chain.link/ccip/concepts/architecture/message-configuration-extraargs.md`
 - Tutorials: `https://docs.chain.link/ccip/evm/tutorials/application-developers/send-arbitrary-data.md`, `https://docs.chain.link/ccip/evm/tutorials/application-developers/transfer-tokens-from-contract.md`, `https://docs.chain.link/ccip/evm/tutorials/application-developers/programmable-token-transfers.md`, `https://docs.chain.link/ccip/evm/tutorials/application-developers/programmable-token-transfers-defensive.md`
 - Best practices: `https://docs.chain.link/ccip/evm/concepts/best-practices.md`
