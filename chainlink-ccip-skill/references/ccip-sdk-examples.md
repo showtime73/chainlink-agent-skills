@@ -117,7 +117,7 @@ console.log({
 });
 ```
 
-Status is `SENT → SOURCE_FINALIZED → COMMITTED → BLESSED → SUCCESS|FAILED` on v1 or `SENT → SOURCE_FINALIZED → VERIFYING → VERIFIED → SUCCESS|FAILED` on v2; never both v1 commit/bless and v2 verified states. See [API](ccip-api.md) for exact schemas.
+Status names, and which names belong to lane version 1.x or 2.0+, are owned by [API](ccip-api.md). Do not mix 1.x commit or bless states with 2.0+ verifying or verified states.
 
 ### Token pool read
 
